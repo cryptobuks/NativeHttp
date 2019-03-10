@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-input  type="email" [(ngModel)]="email"> </ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password</ion-label>
+        <ion-input  type="password" [(ngModel)]="password" ></ion-input>
+      </ion-item>
+      <ion-button expand="full" (click)="myLogin()">Login </ion-button>
+      <ion-button expand="full" shape="round" (click)="logout()">Logout</ion-button>
+      <ion-button expand="full" href="tabs">Go home </ion-button>
+
+
+</ion-content>

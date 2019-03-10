@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Edit Book</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Name</ion-label>
+    <ion-input value="{{singledata.name}}" [(ngModel)]="name" ></ion-input>
+  </ion-item>
+<ion-item>
+    <ion-label>Details</ion-label>
+    <ion-input value="{{singledata.details}}" [(ngModel)]="details"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="myUpdate()">Update Book </ion-button>
+</ion-content>

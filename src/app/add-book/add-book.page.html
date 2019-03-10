@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Book</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  
+      <ion-item>
+        <ion-label>Name</ion-label>
+        <ion-input [(ngModel)]="name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Details </ion-label>
+        <ion-input [(ngModel)]="details"></ion-input>
+      </ion-item>
+     
+      <ion-button expand="full" (click)="insertBook()">Add Book  </ion-button>
+    
+
+  
+</ion-content>

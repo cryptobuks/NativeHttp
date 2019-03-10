@@ -1,9 +1,28 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+My Profile
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+<!-- List of Text Items -->
+<ion-list>
+  <ion-item>
+    <ion-label>{{user.id}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{user.name}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{user.email}}</ion-label>
+  </ion-item>
+
+</ion-list>
+
+
+</ion-content>

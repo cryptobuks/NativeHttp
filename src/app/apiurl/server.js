@@ -1,0 +1,1 @@
+export const apikey ="http://alroomidc.000webhostapp.com/public/";
